@@ -16,38 +16,43 @@ title: Highland Pool
       Highland Pool is a year-round indoor aquatic facility located on the campus of Highland Elementary School in Reedsport, Oregon. Operated by the school district, the pool offers swim lessons, lap swim, public swim, fitness programs, and facility rentals to the community.
     </p>
 
-    <h3>Public Swim Hours</h3>
-    <ul>
-      <li><strong>Lap Swim:</strong> Monday–Friday: 6:00 AM – 8:00 AM & 4:00 PM – 6:00 PM</li>
-      <li><strong>Open Swim:</strong> Saturday: 12:00 PM – 3:00 PM</li>
-      <li><strong>Family Swim:</strong> Friday: 6:00 PM – 8:00 PM</li>
-      <li><strong>Swim Lessons:</strong> By registration</li>
-    </ul>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Public Swim Hours</h3>
+        <ul>
+          <li><strong>Lap Swim:</strong> Mon–Fri: 6–8 AM & 4–6 PM</li>
+          <li><strong>Open Swim:</strong> Sat: 12–3 PM</li>
+          <li><strong>Family Swim:</strong> Fri: 6–8 PM</li>
+          <li><strong>Swim Lessons:</strong> By registration</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Swim Programs</h3>
+        <ul>
+          <li>Learn-to-Swim Classes (Levels 1–6)</li>
+          <li>Parent & Me Water Introduction</li>
+          <li>Adult Swim Lessons</li>
+          <li>Lap Swim & Water Walking</li>
+          <li>Aquatic Fitness Classes</li>
+          <li>Private Coaching & Swim Team Practice</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Facility Rentals</h3>
+        <p>Reserve Highland Pool for private parties, team practices, and events. Lifeguards included. Contact the district office for availability and pricing.</p>
+        <p><a href="/media/pool-rental-form.pdf" target="_blank">Download Rental Form (PDF)</a></p>
+      </div>
+      <div class="card">
+        <h3>Admission & Fees</h3>
+        <ul>
+          <li><strong>Single Visit:</strong> $5 Adult / $3 Youth or Senior</li>
+          <li><strong>10-Visit Pass:</strong> $45 Adult / $25 Youth or Senior</li>
+          <li><strong>Monthly Membership:</strong> $40 Individual / $70 Family</li>
+        </ul>
+      </div>
+    </div>
 
     <p><a href="/media/highland-pool-schedule.pdf" target="_blank">Download Weekly Pool Schedule (PDF)</a></p>
-
-    <h3>Swim Programs</h3>
-    <ul>
-      <li>Learn-to-Swim Classes (Levels 1–6)</li>
-      <li>Parent & Me Water Introduction</li>
-      <li>Adult Swim Lessons</li>
-      <li>Lap Swim & Water Walking</li>
-      <li>Aquatic Fitness Classes</li>
-      <li>Private Coaching & Swim Team Practice</li>
-    </ul>
-
-    <h3>Facility Rentals</h3>
-    <p>
-      Highland Pool is available for private rentals including birthday parties, team practices, and private events. Reservations must be made in advance, and lifeguard staffing is included with the rental fee.
-    </p>
-    <p><a href="/media/pool-rental-form.pdf" target="_blank">Download Pool Rental Form (PDF)</a></p>
-
-    <h3>Admission & Fees</h3>
-    <ul>
-      <li><strong>Single Visit:</strong> $5 Adult / $3 Youth or Senior</li>
-      <li><strong>10-Visit Pass:</strong> $45 Adult / $25 Youth or Senior</li>
-      <li><strong>Monthly Membership:</strong> $40 Individual / $70 Family</li>
-    </ul>
 
     <h3>Photo Gallery</h3>
     <div class="custom-gallery">
@@ -286,3 +291,45 @@ title: Highland Pool
     </p>
   </div>
 </section>
+
+<style>
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 340px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #b60000;
+}
+
+.card p,
+.card ul {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
