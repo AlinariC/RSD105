@@ -1,0 +1,6 @@
+title: Reedsport School District
+baseurl: ""
+url: "https://rsd105.com"
+markdown: kramdown
+theme: null
+exclude: [".DS_Store", "README.md", "LICENSE", "CNAME"]
