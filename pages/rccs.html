@@ -55,20 +55,79 @@ title: Reedsport Community Charter School
     </div>
 
     <div class="rccs-menu">
-      <h2>Monthly Menu</h2>
-      <div class="menu-toggle">
-        <button onclick="showMenu('breakfast')">Breakfast</button>
-        <button onclick="showMenu('lunch')">Lunch</button>
-      </div>
+  <h2>March 2025 Menu</h2>
+  <div class="menu-toggle">
+    <button onclick="showMenu('breakfast')">Breakfast</button>
+    <button onclick="showMenu('lunch')">Lunch</button>
+  </div>
 
-      <div id="breakfast-menu" class="menu-iframe">
-        <iframe src="https://www.reedsport.k12.or.us/wp-content/uploads/2025/02/rccs-breakfast.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
-      </div>
+  <div id="breakfast-menu" class="calendar-table">
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Breakfast</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>March 3</td><td>French Toast Sticks, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 4</td><td>WG Mini Blueberry Loaf, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 5</td><td>Yogurt Fruit Parfait, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 6</td><td>WG Waffle, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 7</td><td>No School</td></tr>
+        <tr><td>March 10</td><td>WG Banana Bread, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 11</td><td>WG Breakfast Pizza, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 12</td><td>WG Waffle, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 13</td><td>Cinnamon Toast Crunch Bar, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 14</td><td>No School</td></tr>
+        <tr><td>March 17</td><td>French Toast Sticks, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 18</td><td>WG Breakfast Pizza, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 19</td><td>WG Waffle, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 20</td><td>WG Cinnamon Toast Crunch Bar, WG Cereal, WG Bagel & Cream Cheese, Yogurt Basket, String Cheese, Fresh Fruit, Milk</td></tr>
+        <tr><td>March 21</td><td>No School</td></tr>
+      </tbody>
+    </table>
+  </div>
 
-      <div id="lunch-menu" class="menu-iframe" style="display: none;">
-        <iframe src="https://www.reedsport.k12.or.us/wp-content/uploads/2025/02/rccs-lunch.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
-      </div>
-    </div>
+  <div id="lunch-menu" class="calendar-table" style="display: none;">
+    <table>
+      <thead>
+        <tr><th>Date</th><th>Lunch</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>March 3</td><td>WG Pizza, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 4</td><td>Stromboli, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 5</td><td>WG Ham/Turkey Sandwich, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 6</td><td>WG Cheeseburger, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 7</td><td>No School</td></tr>
+        <tr><td>March 10</td><td>Bean & Cheese Burrito, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 11</td><td>WG Pizza, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 12</td><td>Grilled Cheese Sandwich, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 13</td><td>Fish Sticks, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 14</td><td>No School</td></tr>
+        <tr><td>March 17</td><td>WG Cheeseburger, French Fries, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 18</td><td>General Tso Chicken, Brown Rice, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 19</td><td>WG Meatball Sub, French Fries, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 20</td><td>WG Ham/Turkey Sandwich, French Fries, Fresh Fruit & Vegetable, Milk</td></tr>
+        <tr><td>March 21</td><td>No School</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+.calendar-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+.calendar-table th {
+  background-color: #b60000;
+  color: white;
+}
+</style>
   </div>
 </section>
 
@@ -110,10 +169,6 @@ title: Reedsport Community Charter School
 </style>
 
 <style>
-.rccs-menu {
-  margin-top: 3rem;
-  text-align: center;
-}
 .menu-toggle {
   margin-bottom: 1rem;
 }
@@ -130,7 +185,7 @@ title: Reedsport Community Charter School
 .menu-toggle button:hover {
   background-color: #800000;
 }
-.menu-iframe {
+.calendar-table {
   max-width: 800px;
   margin: auto;
 }
