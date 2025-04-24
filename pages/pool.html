@@ -49,9 +49,57 @@ title: Highland Pool
       <li><strong>Monthly Membership:</strong> $40 Individual / $70 Family</li>
     </ul>
 
-    <h3>Photos</h3>
-    <img src="/images/pool-interior.jpg" alt="Inside Highland Pool" style="width:100%; max-width:700px; margin:1rem 0;">
-    <img src="/images/pool-lessons.jpg" alt="Swim lessons at Highland Pool" style="width:100%; max-width:700px; margin:1rem 0;">
+    <h3>Photo Gallery</h3>
+    <!-- Lightbox2 styles (add to <head>) -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <div class="photo-grid">
+      <a href="/images/pool-interior.jpg" data-lightbox="pool" data-title="Inside Highland Pool"><img src="/images/pool-interior.jpg" alt="Inside Highland Pool"></a>
+      <a href="/images/pool-lessons.jpg" data-lightbox="pool" data-title="Swim lessons"><img src="/images/pool-lessons.jpg" alt="Swim lessons at Highland Pool"></a>
+      <a href="/images/pool3.jpg" data-lightbox="pool" data-title="Lap lanes"><img src="/images/pool3.jpg" alt="Lap lanes at Highland Pool"></a>
+      <a href="/images/pool4.jpg" data-lightbox="pool" data-title="Kids playing"><img src="/images/pool4.jpg" alt="Kids playing in the shallow end"></a>
+    </div>
+
+    <style>
+    .photo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .photo-grid img {
+      width: 100%;
+      max-width: 22%;
+      flex: 1 1 22%;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+    }
+    .photo-grid a {
+      display: block;
+      max-width: 22%;
+      flex: 1 1 22%;
+    }
+    @media (max-width: 768px) {
+      .photo-grid img {
+        max-width: 48%;
+        flex: 1 1 48%;
+      }
+      .photo-grid a {
+        max-width: 48%;
+        flex: 1 1 48%;
+      }
+    }
+    @media (max-width: 480px) {
+      .photo-grid img {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+      .photo-grid a {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+    }
+    </style>
 
     <h3>Summer Swim Lessons</h3>
     <p>Highland Pool offers structured swim lessons during the summer months for children of all ages and skill levels. Each session runs for two weeks, Monday through Friday.</p>
@@ -202,3 +250,6 @@ title: Highland Pool
     </p>
   </div>
 </section>
+
+    <!-- Lightbox2 script (add before </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
