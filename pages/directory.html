@@ -3,6 +3,8 @@ layout: default
 title: Staff Directory
 ---
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <section class="hero">
   <div class="hero-text">
     <h2>Staff Directory</h2>
@@ -13,6 +15,11 @@ title: Staff Directory
 <section class="site-content">
   <div class="container">
     <p>Need to reach someone? Use the list below to find contact details by department or school.</p>
+
+    <div class="directory-toolbar">
+      <button onclick="window.print()"><span class="material-icons">print</span> Print</button>
+      <button onclick="exportDirectory()"><span class="material-icons">download</span> Export CSV</button>
+    </div>
 
     <table>
       <thead>
@@ -39,7 +46,177 @@ title: Staff Directory
         <!-- Add more entries as needed -->
       </tbody>
     </table>
+
+    <h3>District Office</h3>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="/images/staff/zwenke.jpg" alt="Jon Zwemke">
+        <h3>Jon Zwemke</h3>
+        <p>Superintendent</p>
+        <a href="mailto:jzwemke@reedsport.k12.or.us">jzwemke@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/stipton.jpg" alt="Sharmen Tipton">
+        <h3>Sharmen Tipton</h3>
+        <p>Board Secretary</p>
+        <a href="mailto:stipton@reedsport.k12.or.us">stipton@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/ttipton.jpg" alt="Tosh Tipton">
+        <h3>Tosh Tipton</h3>
+        <p>Technology Director</p>
+        <a href="mailto:ttipton@reedsport.k12.or.us">ttipton@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/tkyelberg.jpg" alt="Chef Thomas Kyelberg">
+        <h3>Chef Thomas Kyelberg</h3>
+        <p>Food Service Director</p>
+        <a href="mailto:thomas.kyelberg@reedsport.k12.or.us">thomas.kyelberg@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/cfoltz.jpg" alt="Colleen Foltz">
+        <h3>Colleen Foltz</h3>
+        <p>School Psychologist</p>
+        <a href="mailto:cfoltz@reedsport.k12.or.us">cfoltz@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/thowell.jpg" alt="Trina Howell">
+        <h3>Trina Howell</h3>
+        <p>Special Education Secretary</p>
+        <a href="mailto:thowell@reedsport.k12.or.us">thowell@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/mshoppe.jpg" alt="Michael Shoppe">
+        <h3>Michael Shoppe</h3>
+        <p>Maintenance Coordinator</p>
+        <a href="mailto:mshoppe@reedsport.k12.or.us">mshoppe@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/ramos.jpg" alt="Rachel Amos">
+        <h3>Rachel Amos</h3>
+        <p>Business Manager, ESD</p>
+        <a href="mailto:ramos@reedsport.k12.or.us">ramos@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/lyle.jpg" alt="Lauren Lyle">
+        <h3>Lauren Lyle</h3>
+        <p>Data/AP Clerk</p>
+        <a href="mailto:lyle@reedsport.k12.or.us">lyle@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/acampbell.jpg" alt="Al Campbell">
+        <h3>Al Campbell</h3>
+        <p>IT Assistant</p>
+        <a href="mailto:acampbell@reedsport.k12.or.us">acampbell@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/tolivant.jpg" alt="Tracy Olivant">
+        <h3>Tracy Olivant</h3>
+        <p>HR Manager, ESD</p>
+        <a href="mailto:tracy.olivant@douglasesd.k12.or.us">tracy.olivant@douglasesd.k12.or.us</a>
+      </div>
+    </div>
+
+    <h3>Reedsport Community Charter School (RCCS)</h3>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="/images/staff/juhling.jpg" alt="Jerry Uhling">
+        <h3>Jerry Uhling</h3>
+        <p>Principal, RCCS</p>
+        <a href="mailto:juhling@reedsport.k12.or.us">juhling@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/swall.jpg" alt="Sheri Wall">
+        <h3>Sheri Wall</h3>
+        <p>Office Manager</p>
+        <a href="mailto:swall@reedsport.k12.or.us">swall@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/bwatts.jpg" alt="Brian Watts">
+        <h3>Brian Watts</h3>
+        <p>Athletic Director</p>
+        <a href="mailto:bwatts@reedsport.k12.or.us">bwatts@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/kluck.jpg" alt="Kelly Luck">
+        <h3>Kelly Luck</h3>
+        <p>Counselor</p>
+        <a href="mailto:kluck@reedsport.k12.or.us">kluck@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/jhollingsworth.jpg" alt="Joan Hollingsworth">
+        <h3>Joan Hollingsworth</h3>
+        <p>Registrar</p>
+        <a href="mailto:jhollingsworth@reedsport.k12.or.us">jhollingsworth@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/smcduffy.jpg" alt="Sandra McDuffy">
+        <h3>Sandra McDuffy</h3>
+        <p>Dean of Students</p>
+        <a href="mailto:smcduffy@reedsport.k12.or.us">smcduffy@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/ajohnson.jpg" alt="Amanda Johnson">
+        <h3>Amanda Johnson</h3>
+        <p>Attendance</p>
+        <a href="mailto:ajohnson@reedsport.k12.or.us">ajohnson@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/jmolano.jpg" alt="Officer Jacob Molano">
+        <h3>Officer Jacob Molano</h3>
+        <p>School Resource Officer</p>
+        <a href="mailto:jacob.molano@reedsport.k12.or.us">jacob.molano@reedsport.k12.or.us</a>
+      </div>
+    </div>
+
+    <h3>Highland Elementary School (HES)</h3>
+    <div class="staff-grid">
+      <div class="staff-card">
+        <img src="/images/staff/jzwemke.jpg" alt="Jon Zwemke">
+        <h3>Jon Zwemke</h3>
+        <p>Principal, HES</p>
+        <a href="mailto:jzwemke@reedsport.k12.or.us">jzwemke@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/mwatts.jpg" alt="Melissa Watts">
+        <h3>Melissa Watts</h3>
+        <p>Vice Principal, HES</p>
+        <a href="mailto:mwatts@reedsport.k12.or.us">mwatts@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/lsmart.jpg" alt="Lisa Smart">
+        <h3>Lisa Smart</h3>
+        <p>Office Manager, HES</p>
+        <a href="mailto:lsmart@reedsport.k12.or.us">lsmart@reedsport.k12.or.us</a>
+      </div>
+      <div class="staff-card">
+        <img src="/images/staff/jdailey.jpg" alt="Jess Dailey">
+        <h3>Jess Dailey</h3>
+        <p>Registrar, HES</p>
+        <a href="mailto:jdailey@reedsport.k12.or.us">jdailey@reedsport.k12.or.us</a>
+      </div>
+    </div>
   </div>
+
+<script>
+function exportDirectory() {
+  const cards = document.querySelectorAll('.staff-card');
+  let csv = 'Name,Title,Email\n';
+  cards.forEach(card => {
+    const name = card.querySelector('h3')?.innerText || '';
+    const title = card.querySelector('p')?.innerText || '';
+    const email = card.querySelector('a')?.innerText || '';
+    csv += `"${name}","${title}","${email}"\n`;
+  });
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'staff-directory.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+</script>
 </section>
 
 <style>
@@ -59,5 +236,65 @@ th, td {
 }
 tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.staff-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+}
+.staff-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 120px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+.staff-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+.staff-card p {
+  margin: 0 0 0.5rem;
+  color: #555;
+}
+.staff-card a {
+  color: #b60000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.staff-card a:hover {
+  text-decoration: underline;
+}
+.directory-toolbar {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.directory-toolbar button {
+  background: #b60000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.directory-toolbar button:hover {
+  background: #800000;
+}
+.material-icons {
+  font-size: 1.2rem;
 }
 </style>
