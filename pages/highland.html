@@ -50,6 +50,69 @@ title: Highland Elementary School
         </p>
       </div>
     </div>
+
+    <div class="highland-menu">
+      <h2>March 2025 Menus</h2>
+      <div class="menu-toggle">
+        <button onclick="showMenu('hes-breakfast')">Breakfast</button>
+        <button onclick="showMenu('hes-lunch')">Lunch</button>
+      </div>
+
+      <div id="hes-breakfast" class="calendar-grid">
+        <div class="calendar-row">
+          <div class="day">Mon 3<br>French Toast Sticks</div>
+          <div class="day">Tue 4<br>WG Mini Eggo Waffles</div>
+          <div class="day">Wed 5<br>Yogurt Fruit Parfait</div>
+          <div class="day">Thu 6<br>WG Mini Pancakes</div>
+          <div class="day">Fri 7<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 10<br>WG Banana Bread</div>
+          <div class="day">Tue 11<br>WG Breakfast Pizza</div>
+          <div class="day">Wed 12<br>WG Waffle</div>
+          <div class="day">Thu 13<br>Cinnamon Toast Crunch Bar</div>
+          <div class="day">Fri 14<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 17<br>French Toast Sticks</div>
+          <div class="day">Tue 18<br>WG Breakfast Pizza</div>
+          <div class="day">Wed 19<br>WG Waffle</div>
+          <div class="day">Thu 20<br>Toast Crunch Bar</div>
+          <div class="day">Fri 21<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 31<br>WG Banana Bread</div>
+        </div>
+      </div>
+
+      <div id="hes-lunch" class="calendar-grid" style="display: none;">
+        <div class="calendar-row">
+          <div class="day">Mon 3<br>Orange Chicken</div>
+          <div class="day">Tue 4<br>Ham/Turkey Sandwich</div>
+          <div class="day">Wed 5<br>Cheeseburger</div>
+          <div class="day">Thu 6<br>Meatball Sub</div>
+          <div class="day">Fri 7<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 10<br>Bean & Cheese Burrito</div>
+          <div class="day">Tue 11<br>WG Pizza</div>
+          <div class="day">Wed 12<br>Grilled Cheese</div>
+          <div class="day">Thu 13<br>Fish Sticks</div>
+          <div class="day">Fri 14<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 17<br>WG Cheeseburger</div>
+          <div class="day">Tue 18<br>Orange Chicken</div>
+          <div class="day">Wed 19<br>WG Meatball Sub</div>
+          <div class="day">Thu 20<br>Ham/Turkey Sandwich</div>
+          <div class="day">Fri 21<br><em>No School</em></div>
+        </div>
+        <div class="calendar-row">
+          <div class="day">Mon 31<br>WG Pizza</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -83,4 +146,56 @@ title: Highland Elementary School
   background: #f9f9f9;
   font-size: 0.95rem;
 }
+
+.highland-menu {
+  margin-top: 3rem;
+  text-align: center;
+}
+.menu-toggle {
+  margin-bottom: 1rem;
+}
+.menu-toggle button {
+  background-color: #b60000;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-toggle button:hover {
+  background-color: #800000;
+}
+.calendar-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.calendar-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.calendar-row .day {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.calendar-row .day em {
+  color: #800000;
+}
 </style>
+
+<script>
+function showMenu(type) {
+  document.getElementById('hes-breakfast').style.display = (type === 'hes-breakfast') ? 'block' : 'none';
+  document.getElementById('hes-lunch').style.display = (type === 'hes-lunch') ? 'block' : 'none';
+}
+</script>
