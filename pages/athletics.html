@@ -1,0 +1,168 @@
+---
+layout: default
+title: RCCS Athletics
+---
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>RCCS Athletics</h2>
+    <p>Building leadership, teamwork, and school spirit through competitive sports</p>
+  </div>
+</section>
+
+<section class="site-content">
+  <div class="container">
+    <p>
+      Reedsport Community Charter School offers a wide variety of athletic opportunities for students in grades 7–12. Our sports programs promote physical fitness, personal growth, discipline, and the positive values of teamwork and perseverance.
+    </p>
+
+    <div class="athletics-grid">
+      <div class="athletics-card">
+        <h3>Fall Sports</h3>
+        <ul>
+          <li>Football</li>
+          <li>Volleyball</li>
+          <li>Cross Country</li>
+        </ul>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Winter Sports</h3>
+        <ul>
+          <li>Boys Basketball</li>
+          <li>Girls Basketball</li>
+          <li>Wrestling</li>
+        </ul>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Spring Sports</h3>
+        <ul>
+          <li>Baseball</li>
+          <li>Softball</li>
+          <li>Track and Field</li>
+        </ul>
+      </div>
+
+      <div class="athletics-card">
+        <h3>E-Sports</h3>
+        <p>
+          RCCS proudly supports a competitive E-Sports team, offering students a chance to participate in structured online gaming leagues and tournaments. E-Sports encourages strategic thinking, communication, and team-building in a high-tech environment.
+        </p>
+        <ul>
+          <li>Compete in statewide and national high school leagues</li>
+          <li>Games include Rocket League, Super Smash Bros, and more</li>
+          <li>Available to both middle and high school students</li>
+        </ul>
+        <p>For more information, contact the RCCS Athletic Department or E-Sports Club Advisor.</p>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Athletic Forms & Requirements</h3>
+        <p>To participate in RCCS Athletics, students must:</p>
+        <ul>
+          <li>Have a current physical exam on file</li>
+          <li>Submit an athletics participation form</li>
+          <li>Maintain academic eligibility</li>
+        </ul>
+        <p>
+          Forms are available in the RCCS office or can be downloaded below:
+          <br><a href="/media/rccs-athletics-forms.pdf" target="_blank">Download Athletics Forms (PDF)</a>
+        </p>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Trap Shooting Team</h3>
+        <p>
+          Our competitive Trap Shooting Team represents RCCS at regional meets and tournaments. This program teaches firearm safety, precision, discipline, and focus through structured coaching and training. Equipment and safety gear are provided.
+        </p>
+        <ul>
+          <li>Available to high school students</li>
+          <li>Meets weekly for range practice</li>
+          <li>Competes locally and statewide</li>
+        </ul>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Elementary Archery Program</h3>
+        <p>
+          Highland Elementary is proud to offer an after-school Archery Team as part of its enrichment program. Students learn focus, coordination, and confidence while having fun in a safe and structured environment.
+        </p>
+        <ul>
+          <li>Grades 4–6 eligible to participate</li>
+          <li>NASP-certified instruction</li>
+          <li>All equipment provided</li>
+        </ul>
+      </div>
+
+      <div class="athletics-card">
+        <h3>Join a Team</h3>
+        <p>If you're interested in joining any of our athletic programs, please complete the form below and a coach or advisor will follow up with more information.</p>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+          <label for="student">Student Name</label>
+          <input type="text" id="student" name="Student Name" required>
+
+          <label for="grade">Grade Level</label>
+          <input type="text" id="grade" name="Grade" required>
+
+          <label for="program">Sport or Activity</label>
+          <input type="text" id="program" name="Program Interest" required>
+
+          <label for="contact">Parent/Guardian Email</label>
+          <input type="email" id="contact" name="Email" required>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.athletics-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.athletics-card {
+  background: #f8f8f8;
+  border-left: 6px solid #b60000;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.athletics-card h3 {
+  margin-top: 0;
+  color: #b60000;
+}
+
+.athletics-card form {
+  display: flex;
+  flex-direction: column;
+}
+.athletics-card label {
+  margin: 0.5rem 0 0.25rem;
+  font-weight: bold;
+}
+.athletics-card input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+.athletics-card button {
+  background: #b60000;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.athletics-card button:hover {
+  background: #800000;
+}
+</style>
