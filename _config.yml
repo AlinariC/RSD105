@@ -1,6 +1,0 @@
-title: Reedsport School District
-baseurl: ""
-url: "https://alinariC.github.io/RSD105"
-markdown: kramdown
-theme: null
-exclude: [Gemfile, Gemfile.lock, node_modules, LICENSE, Readme.md]
