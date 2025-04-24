@@ -6,11 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .logo-main {
+      height: 120px;
+    }
+    .logo-side {
+      height: 90px;
+      opacity: 0.95;
+    }
+  </style>
 </head>
 <body>
     <header class="site-header">
       <div class="container" style="text-align: center; padding: 1rem 0;">
-        <img src="/images/logo.png" alt="Reedsport Logo" class="logo" style="max-height: 140px;" />
+        <div class="logo-container">
+          <a href="/pages/highland.html">
+            <img src="/images/hes.png" alt="Highland Elementary Logo" class="logo-side left" />
+          </a>
+          <a href="/">
+            <img src="/images/logo.png" alt="Reedsport Logo" class="logo-main" />
+          </a>
+          <a href="/pages/rccs.html">
+            <img src="/images/rccs.png" alt="RCCS Logo" class="logo-side right" />
+          </a>
+        </div>
       </div>
     </header>
 
