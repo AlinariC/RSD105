@@ -53,6 +53,22 @@ title: Reedsport Community Charter School
         </ul>
       </div>
     </div>
+
+    <div class="rccs-menu">
+      <h2>Monthly Menu</h2>
+      <div class="menu-toggle">
+        <button onclick="showMenu('breakfast')">Breakfast</button>
+        <button onclick="showMenu('lunch')">Lunch</button>
+      </div>
+
+      <div id="breakfast-menu" class="menu-iframe">
+        <iframe src="https://www.reedsport.k12.or.us/wp-content/uploads/2025/02/rccs-breakfast.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+      </div>
+
+      <div id="lunch-menu" class="menu-iframe" style="display: none;">
+        <iframe src="https://www.reedsport.k12.or.us/wp-content/uploads/2025/02/rccs-lunch.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -92,3 +108,37 @@ title: Reedsport Community Charter School
   border-style: dashed;
 }
 </style>
+
+<style>
+.rccs-menu {
+  margin-top: 3rem;
+  text-align: center;
+}
+.menu-toggle {
+  margin-bottom: 1rem;
+}
+.menu-toggle button {
+  background-color: #b60000;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-toggle button:hover {
+  background-color: #800000;
+}
+.menu-iframe {
+  max-width: 800px;
+  margin: auto;
+}
+</style>
+
+<script>
+function showMenu(type) {
+  document.getElementById('breakfast-menu').style.display = (type === 'breakfast') ? 'block' : 'none';
+  document.getElementById('lunch-menu').style.display = (type === 'lunch') ? 'block' : 'none';
+}
+</script>
