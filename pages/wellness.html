@@ -1,0 +1,62 @@
+
+
+---
+layout: default
+title: Wellness Tracker
+---
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Staff Wellness Tracker</h2>
+    <p>Log your daily steps and water intake to stay motivated and healthy together!</p>
+  </div>
+</section>
+
+<section class="site-content">
+  <div class="container">
+    <form action="https://usebasin.com/f/56fbcf616080" method="POST" class="wellness-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="Name" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="Date" value="{{ 'now' | date: '%Y-%m-%d' }}" required>
+
+      <label for="steps">Steps Walked</label>
+      <input type="number" id="steps" name="Steps" min="0" required>
+
+      <label for="water">Water Intake (oz)</label>
+      <input type="number" id="water" name="Water" min="0" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<style>
+.wellness-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.wellness-form label {
+  font-weight: bold;
+}
+.wellness-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.wellness-form button {
+  background: #b60000;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wellness-form button:hover {
+  background: #800000;
+}
+</style>
